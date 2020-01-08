@@ -2,10 +2,14 @@ a = "qwertyu"
 b = "123fdgd"
 c = "123455"
 d = "    "
+e = "asd\nfg\nff"
 
-# rsplitlines:按照指定的内容分隔，返回一个包含各行作为一个元素的列表
-ret1 = a.rpartition("y")
+# splitlines:按照指定的内容分隔，返回一个包含各行作为一个元素的列表
+ret1 = a.splitlines()
 print(ret1)
+
+ret11 = e.splitlines()
+print(ret11)
 
 # isalpha:判断str是否都是字母，如果str都是字母，则返回True，否则返回False
 ret2 = a.isalpha()
